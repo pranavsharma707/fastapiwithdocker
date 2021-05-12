@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+    fastapi:
+        image: myimage
+        ports: ["8000:80"]
+        container_name: myimagecontainer
+
+    fastapi1:
+        image: newimage:latest
+        ports: ["8001:80"]
+        container_name:  newimagecontainer
+
